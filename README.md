@@ -33,8 +33,8 @@ import "github.com/k0kubun/twitter-auth/auth"
 
 func main() {
   credential := &auth.Credential{
-    ConsumerKey:    options.ConsumerKey,
-    ConsumerSecret: options.ConsumerSecret,
+    ConsumerKey:    "CONSUMER_KEY",
+    ConsumerSecret: "CONSUMER_SECRET",
   }
   accessToken := auth.Authenticate(credential)
 
