@@ -39,7 +39,7 @@ var (
 )
 
 func DefaultCredential() *Credential {
-	return CredentialByClientName("Twitter for iPhone")
+	return CredentialByClientName("Twitter for Mac")
 }
 
 func CredentialByClientName(clientName string) *Credential {
