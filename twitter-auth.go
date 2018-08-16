@@ -10,7 +10,7 @@ type Options struct {
 	ConsumerKey     string `short:"k" long:"consumer-key" description:"use selected consumer key"`
 	ConsumerSecret  string `short:"s" long:"consumer-secret" description:"use selected consumer secret"`
 	ClientName      string `short:"n" long:"client-name" description:"use public credentials"`
-	ShowClientNames bool   `short:"l" long:"list" default:"false" description:"show available public client names"`
+	ShowClientNames bool   `short:"l" long:"list" description:"show available public client names"`
 }
 
 func authenticate(options *Options) {
