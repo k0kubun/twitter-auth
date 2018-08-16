@@ -27,19 +27,11 @@ var (
 			ConsumerKey:    "CjulERsDeqhhjSme66ECg",
 			ConsumerSecret: "IQWdVyqFxghAtURHGeGiWAsmCAGmdW3WmbEx6Hck",
 		},
-		"Twitter for Mac": Credential{
-			ConsumerKey:    "3rJOl1ODzm9yZy63FACdg",
-			ConsumerSecret: "5jPoQ5kQvMJFDYRNE8bQ4rHuds4xJqhvgNJM4awaE8",
-		},
-		"Twitter for Windows Phone": Credential{
-			ConsumerKey:    "yN3DUNVO0Me63IAQdhTfCA",
-			ConsumerSecret: "c768oTKdzAjIYCmpSNIdZbGaG0t6rOhSFQP0S5uC79g",
-		},
 	}
 )
 
 func DefaultCredential() *Credential {
-	return CredentialByClientName("Twitter for Mac")
+	return CredentialByClientName("Twitter for iPhone")
 }
 
 func CredentialByClientName(clientName string) *Credential {
