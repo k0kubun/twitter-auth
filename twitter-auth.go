@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/jessevdk/go-flags"
 	"github.com/k0kubun/twitter-auth/auth"
+	"log"
 )
 
 type Options struct {
@@ -36,6 +37,7 @@ func authenticate(options *Options) {
 func main() {
 	options := new(Options)
 	if _, err := flags.Parse(options); err != nil {
+		log.Fatal(err)
 		return
 	}
 
