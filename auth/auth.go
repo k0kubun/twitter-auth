@@ -16,7 +16,8 @@ func Authenticate(credential *Credential) *oauth.AccessToken {
 		log.Fatal(err)
 	}
 
-	openUrl(url)
+	// openUrl(url)
+	log.Print(url)
 	pin := ReadPin()
 
 	accessToken, err := consumer.AuthorizeToken(requestToken, pin)
